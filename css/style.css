@@ -1,0 +1,148 @@
+body,
+.dropdown-menu {
+    background-color: #C6A15B;
+}
+
+h1 {
+text-align: center;
+font-family: Brush Script MT; 
+font-size: 70px;
+margin-bottom: -30px;
+}
+
+h2 {
+	text-align: left;
+}
+
+h4 {
+	font-family: Helvetica;
+	font-size: 14px;
+}
+
+blockquote {
+    border-left: 5px solid #B51C35;
+}
+
+
+
+.icon {
+	width: 150px;
+	height: 150px;
+}
+
+.jumbotron, .btn-default {
+    background-color: #DFCBA5;
+}
+
+.img-thumbnail {
+	margin-top: 50px;
+}
+
+.navbar-default {
+	width: 100%;
+	z-index:1;
+	background-color: #DFCBA5;
+	border-bottom-color: #B51C35;
+	border-width: 2px;
+}
+
+.nav-tabs {
+	border-bottom-color: #B51C35;
+	border-width: 2px;
+	margin-bottom: 20px;
+
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #B51C35;
+}
+
+#statsBtn,
+.content-button {
+	padding: .5em 1em;
+	border: 3px solid #B51C35;
+	border-radius: 10px;
+    font-weight: 600;
+    background-color: #C6A15B;
+    margin-right: 10px;
+}
+
+.nav-tabs,
+.navbar-default
+.navbar-brand,
+.navbar-default
+.navbar-nav>li>a,
+.nav-tabs>li>a,
+a.content-button {
+	color: black;
+	text-decoration: none;
+}
+
+/* When navbar is active or being hovered */
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+
+.open>.dropdown-toggle.btn-default,
+.nav-tabs>li>a:hover,
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.dropdown-menu>li>a:hover,
+#statsBtn:hover,
+#statsBtn:focus,
+a.content-button:hover {	
+	background-color: #B51C35;
+	color: #DFCBA5;
+    border-color: #B51C35;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+}
