@@ -30,6 +30,7 @@ CLOCKBUTTON.addEventListener("click", function(e){toggleClock(e); }, false);
 /* Add multiple listeners to a single event */
 CLOCKBUTTON.addEventListener("click", function(){console.log("button was clicked!"); }, false);
 
+
 /* Add leading zero to numbers 9 or below */
 function leadingZero(time) {
     if (time <=9) 
@@ -59,7 +60,7 @@ function runClock() {
     HOURHAND.style.transform = "rotate(" + hrPos + "deg)";
     MINUTEHAND.style.transform = "rotate(" + minPos + "deg)";
     SECONDHAND.style.transform = "rotate(" + secPos + "deg)";
-    CLOCKWRITTEN.innerHTML = "<h3>The time is " + leadingZero(hour) + ":" + leadingZero(min) + ":" + leadingZero(sec) + " EST</h3>";
+    CLOCKWRITTEN.innerHTML = "<h3>The time is " + leadingZero(hour) + ":" + leadingZero(min) + ":" + leadingZero(sec) + " EST</h3><br/><br/><br/>";
 }
 
 /* Run the clock */ 
