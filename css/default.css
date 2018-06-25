@@ -17,7 +17,7 @@
 		font-family: Brush Script MT; 
 		font-size: 70px;
 	}
-	
+
 	h4 {
 		font-family: Helvetica;
 		font-size: 14px;
@@ -447,11 +447,15 @@
 		float:right;
 		background: #ADA8B6;
 	}
-	.roundrect {
+	.carousel-inner {
 		border-radius: 15px;
-		max-width: 60%;
+		max-width: 50%;
+		max-width: 50%;
 		height: auto;
 		width: auto\9; /* ie8 */
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
 	}
 	
 	
@@ -517,8 +521,8 @@ blockquote {
 }
 
 .icon {
-	width: 150px;
-	height: 150px;
+	width: 170px;
+	height: 170px;
 }
 
 .img-thumbnail {
@@ -577,58 +581,4 @@ a.content-button:hover {
 	background-color: #7284A8;
 	color: white;
     border-color: #7284A8;
-}
-
-
-
-
-/* Clock styles */
-.circle {
-    fill: none;
-    stroke: #000;
-    stroke-width: 9;
-    stroke-miterlimit: 10;
-}
-
-.mid-circle {
-    fill: #000;
-}
-.hour-marks {
-    fill: none;
-    stroke: #000;
-    stroke-width: 9;
-    stroke-miterlimit: 10;
-}
-
-.hour-arm {
-    fill: none;
-    stroke: #000;
-    stroke-width: 17;
-    stroke-miterlimit: 10;
-}
-
-.minute-arm {
-    fill: none;
-    stroke: #000;
-    stroke-width: 11;
-    stroke-miterlimit: 10;
-}
-
-.second-arm {
-    fill: none;
-    stroke: #000;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
-}
-
-/* Transparent box ensuring arms center properly. */
-.sizing-box {
-    fill: none;
-}
-
-/* Make all arms rotate around the same center point. */
-#hour,
-#minute,
-#second {
-    transform-origin: 300px 300px;
 }

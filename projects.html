@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Embellished 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140207
+
+-->
+<html>
+	<head>
+		<!-- IE Edge Meta Tag -->
+	<!-- edge tells IE to use best engine avail. -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Viewport -->
+	<!-- for mobile browser viewability -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Default CSS -->	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+	<title>Israel Felhandler</title>
+	<link rel="icon" href="images/me.jpg">
+
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<div id="wrapper1">
+				<div id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="current_page_item"><a href="projects.html">Projects</a></li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="lebron.html">LeBron</a></li>
+					</ul>
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="wrapper2">
+				<div id="main" class="container">>
+					<header class="align-center">
+						<h2>Projects</h2>
+						<p>Mouse over each image to view description</p>
+					</header>
+					<div class="w3-content w3-display-container" align="center">
+					  <img class="mySlides" src="inprog.jpg" style="width:75%; height:75%" title="CircFit: A cross-platform C# Xamarin App for iOS and Android that allows a user to create their own circuits with any exercises they want and stores them into a database. This project is currently in progress.">
+					  <img class="mySlides" src="namegen.png" style="width:75%; height:75%" title="Username Generator: A python program written for console that will give the user an alliteration username of an adjective and an animal based off a letter of their choice.">
+					  <img class="mySlides" src="weatherwear.jpg" style="width:75%; height:75%" title="WeatherWear: An Android App that uses the current weather conditions to show the user potential clothing choices based on items they own with a built in alarm to take the user to the app when they wake up.">
+					  <img class="mySlides" src="ingredient.jpg" style="width:75%; height:50%" title="Ingredient Search: A python and flask based scraper website that will give a user a random recipe based on the items they pick from the drop downs.">
+					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  if (n > x.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+						     x[i].style.display = "none";  
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						}
+					</script>
+
+				</div>
+			</div>
+
+	<!-- Copyright container -->
+	<div id="copyright" class="container">
+		<p>&copy; Israel Felhandler. All rights reserved. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	</div>
+
+	<!-- To allow jQuery -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Boostrap features -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+
+	</body>
+</html>
